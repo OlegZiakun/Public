@@ -1,0 +1,1 @@
+Implementation of equivalent C# finally keyword in C++

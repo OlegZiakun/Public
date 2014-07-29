@@ -1,0 +1,1 @@
+Implementation of equivalent C# property keyword in C++
