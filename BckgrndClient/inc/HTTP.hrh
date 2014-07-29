@@ -1,0 +1,17 @@
+
+#ifndef __CLIENT_HRH__
+#define __CLIENT_HRH__
+
+// Client enumerate command codes
+enum TClientIds
+    {
+    EClientGet = 1, // start value must not be 0
+    EClientPost,
+    EClientCancel,
+    EClientSwitchFocus,
+    EClientHelp,
+    EClientAbout
+    };
+
+
+#endif // __CLIENT_HRH__

@@ -1,0 +1,45 @@
+/*
+============================================================================
+ Name		: bld.inf
+ Author	  : Oleg Ziakun
+ Copyright   : 
+ Description : This file provides the information required for building the
+				whole of a BckgrndClient.
+============================================================================
+*/
+
+
+PRJ_PLATFORMS
+WINSCW ARMV5 GCCE
+
+
+#ifdef SBSV2
+
+PRJ_EXTENSIONS
+	
+	START EXTENSION s60/mifconv
+	OPTION TARGETFILE bckgrndclient_0xE7ADC8DC.mif
+	OPTION HEADERFILE bckgrndclient_0xE7ADC8DC.mbg
+	OPTION SOURCEDIR ../gfx
+	OPTION SOURCES -c32 qgn_menu_BckgrndClient
+	END
+	
+	// help compiler is not always available; see similar comment in *.pkg file
+	START EXTENSION techview/bldhelp
+	OPTION HELPPROJECTFILE BckgrndClient.cshlp
+	OPTION HELPTOOLTARGETNAME bckgrndclient_0xE7ADC8DC.hlp
+	END
+
+#else
+
+PRJ_MMPFILES
+
+	gnumakefile icons_scalable_dc.mk
+
+	// help compiler is not always available; see similar comment in *.pkg file
+
+#endif
+
+PRJ_MMPFILES
+
+BckgrndClient.mmp

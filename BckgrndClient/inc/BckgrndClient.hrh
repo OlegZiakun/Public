@@ -1,0 +1,24 @@
+/*
+ ============================================================================
+ Name		: BckgrndClient.hrh
+ Author	  : Oleg Ziakun
+ Copyright   : 
+ Description : This file contains declarations for constants of BckgrndClient.
+ The file can be included in C++ or resource file.
+ ============================================================================
+ */
+#ifndef __BCKGRNDCLIENT_HRH__
+#define __BCKGRNDCLIENT_HRH__
+
+#define _UID3 0xE7ADC8DC
+
+// BckgrndClient enumerate command codes
+enum TBckgrndClientIds
+	{
+	ECommand1 = 0x6001, // start value must not be 0
+	ECommand2,
+	EHelp,
+	EAbout
+	};
+
+#endif // __BCKGRNDCLIENT_HRH__

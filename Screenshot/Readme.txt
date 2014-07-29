@@ -1,0 +1,1 @@
+Example of how to make a screenshot in Qt and send it with additional system info to a server.

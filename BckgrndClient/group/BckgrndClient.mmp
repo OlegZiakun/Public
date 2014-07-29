@@ -1,0 +1,63 @@
+/*
+============================================================================
+ Name		: BckgrndClient.mmp
+ Author	  : Oleg Ziakun
+ Copyright   : 
+ Description : This is the project specification file for BckgrndClient.
+============================================================================
+*/
+
+TARGET			BckgrndClient_0xE7ADC8DC.exe
+TARGETTYPE		exe
+UID		  0x100039CE 0xE7ADC8DC
+
+SOURCEPATH		..\src
+SOURCE			BckgrndClient.cpp
+SOURCE			BckgrndClientApplication.cpp
+SOURCE			BckgrndClientAppView.cpp
+SOURCE			BckgrndClientAppUi.cpp
+SOURCE			BckgrndClientDocument.cpp
+
+SOURCEPATH		..\data
+
+START RESOURCE	BckgrndClient.rss
+HEADER
+TARGET BckgrndClient_0xE7ADC8DC
+TARGETPATH resource\apps
+END //RESOURCE
+
+START RESOURCE	BckgrndClient_reg.rss
+TARGET BckgrndClient_0xE7ADC8DC_reg
+TARGETPATH 	  \private\10003a3f\apps
+END //RESOURCE
+
+
+
+USERINCLUDE	   ..\inc
+
+SYSTEMINCLUDE	 \epoc32\include
+
+LIBRARY		   euser.lib
+LIBRARY		   apparc.lib
+LIBRARY		   cone.lib
+LIBRARY		   eikcore.lib
+LIBRARY		   avkon.lib
+LIBRARY		   commonengine.lib
+LIBRARY		   efsrv.lib 
+LIBRARY		   estor.lib
+LIBRARY        aknnotify.lib
+LIBRARY        hlplch.lib esock.lib http.lib bafl.lib inetprotutil.lib centralrepository.lib apengine.lib apsettingshandlerui.lib commdb.lib ecom.lib
+ 
+
+LANG SC
+
+VENDORID	  	  0
+SECUREID		  0xE7ADC8DC
+CAPABILITY	  	  ReadUserData
+
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE_UDEBONLY
+#endif
+// End of File
+SOURCEPATH ..\src
+SOURCE CGetTimer.cpp ClientStarter.cpp HTTPEngine.cpp GetContent.cpp
