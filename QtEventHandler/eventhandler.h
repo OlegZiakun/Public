@@ -9,7 +9,7 @@ class EventHandler
 public:
     typedef void (T::*KeyActionFunc)(QObject*);
 
-    explicit EventHandler(T* hUI) : handlerUI(hUI){}
+    explicit EventHandler(T *hUI) : handlerUI(hUI){}
     ~EventHandler() {keyActions.clear();}
 
 public:
@@ -21,7 +21,7 @@ private:
 
 private:
     QMap<Qt::Key, KeyActionFunc> keyActions;
-    T* handlerUI;
+    T *handlerUI;
 };
 
 template <typename T>
@@ -38,7 +38,7 @@ bool EventHandler<T>::event(QObject *object, QEvent *event)
 template <typename T>
 bool EventHandler<T>::keyPressEvent(QObject *object, QEvent *event)
 {
-    QKeyEvent* keyEvent = static_cast<QKeyEvent*>(event);
+    QKeyEvent *keyEvent = static_cast<QKeyEvent*>(event);
     Qt::Key key = static_cast<Qt::Key> (keyEvent->key());
 
     if(keyActions.contains(key))
