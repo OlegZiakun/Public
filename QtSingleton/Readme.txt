@@ -1,0 +1,1 @@
+Implementation of singleton class for Qt
