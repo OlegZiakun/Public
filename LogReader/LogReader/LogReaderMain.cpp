@@ -9,7 +9,7 @@ int main(int argc, char* argv[])
 {
 	if (argc != 3)
 	{
-		std::cout << "Usage: TestForMetaQuotes.exe <regular expression> <file name>" << std::endl;
+		std::cout << "Usage: LogReader.exe <regular expression> <file name>" << std::endl;
 		std::cout << "Please note: if you are use spaces in the filter line take the filter in quotes" << std::endl;
 		std::cout << "You can find results in res.txt file in program directory" << std::endl;
 		
