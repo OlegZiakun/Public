@@ -1,3 +1,7 @@
+/*
+   Copyright (C) Oleg Ziakun
+*/
+
 #ifndef FINALLY_H
 #define FINALLY_H
 

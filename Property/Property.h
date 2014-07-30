@@ -1,3 +1,7 @@
+/*
+   Copyright (C) Oleg Ziakun
+*/
+
 #ifndef PROPERTY_H
 #define PROPERTY_H
 
