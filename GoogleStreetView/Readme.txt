@@ -1,1 +1,1 @@
-Example of using Google Street View API.
+Usage of Google Street View API.
