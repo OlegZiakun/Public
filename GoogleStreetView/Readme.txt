@@ -1,1 +1,1 @@
-Usage of Google Street View API.
+Usage of Google Street View API using Qt C++.
