@@ -1,1 +1,1 @@
-This is an example of how to work the types of connection (Qt::ConnectionType) that can be used between signals and slots. In particular, the types of connection determines whether a particular signal is delivered to a slot immediately or queued for delivery at a later time.
+This implements work with different types of connection (Qt::ConnectionType) that can be used between signals and slots. In particular, the types of connection determines whether a particular signal is delivered to a slot immediately or queued for delivery at a later time.

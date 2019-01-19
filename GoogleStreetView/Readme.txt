@@ -1,1 +1,1 @@
-Usage of Google Street View API using Qt C++.
+Qt C++ client for Google Street View API.

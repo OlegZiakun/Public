@@ -1,1 +1,1 @@
-See description in Country Flags.pdf
+Parsing, loading and handling of text and images resources.
